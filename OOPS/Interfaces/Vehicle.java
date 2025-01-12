@@ -1,6 +1,6 @@
 package OOPS.Interfaces;
 
-public class Vehicle implements Engine, Brake  {
+public class Vehicle implements Engine, Brake,MediaPlayer  {
 
     @Override
     public void brake() {
@@ -22,4 +22,15 @@ public class Vehicle implements Engine, Brake  {
     public void acc() {
         System.out.println("Car acc");
     }
+
+    @Override
+    public void play() {
+        System.out.println("Music start");
+    }
+
+//
+//    @Override
+//    public void pause() {
+//        System.out.println("Music stop");
+//    }
 }
