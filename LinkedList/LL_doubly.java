@@ -42,8 +42,33 @@ public class LL_doubly {
         size++;
     }
 
-    public void insert_at_last(int val) {
+    public void insert_at_specific_index(int val,int index) {
+        if (index < 0 || index > size) {
+            throw new IndexOutOfBoundsException("Index out of bounds");
+        }
+        Node newnode = new Node(val);
+        if (index == 0) {
+            insert_at_first(val);
+            return;
+        } else if (index == size) {
+            // Insert at the end
+            newnode.prev = tail;
+            tail.next = newnode;
+            tail = newnode;
+        } else
+        {
+            Node temp = head;
+            while (index > 0 && temp != null) {
+                temp = temp.next;
+                index--;
+            }
+            newnode.next = temp.next;
+            newnode.prev = temp;
 
+            temp.next = newnode;
+            temp.next.prev = newnode;
+        }
+        size++;
     }
 
     public void display() {                                //>>>>>>>>>>>>>>>>>>>>>>>>>>>

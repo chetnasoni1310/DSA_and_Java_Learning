@@ -8,6 +8,10 @@ class Myth extends Thread{
         super(name);
     }
 
+    public Myth(Runnable task) {
+        super(task);
+    }
+
     @Override
     public void run() {
         System.out.println("YOYO");
@@ -19,9 +23,13 @@ public class Thread_Constructor {
             t1.start();
         System.out.println("This is the myth id :"+t1.getId());
         System.out.println("This is the myth name: "+t1.getName());
-        Myth t2=new Myth("Chetna_SOni_The_Great");
+
+
+        Myth t2=new Myth("Chetna_SOni_The_Super_Great");
         t2.start();
         System.out.println("This is the myth id :"+t2.getId());
         System.out.println("This is the myth name: "+t2.getName());
+
+
     }
 }

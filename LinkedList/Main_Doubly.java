@@ -11,5 +11,9 @@ public class Main_Doubly {
         list.display();
         list.display_reverse_using_tail();
 
+        list.insert_at_specific_index(99,2);
+        list.display();
+
+
     }
 }

@@ -116,6 +116,15 @@ public class LL_singly {
         newnode.next=temp2;
         size++;
     }
+    public void Insert_Using_Recursion(Node head ,int val)
+    {
+        if(head==null)
+        {
+            Node newnode=head;
+            return;
+        }
+
+    }
 
 
     public void display(){                                //>>>>>>>>>>>>>>>>>>>>>>>>>>>
