@@ -38,12 +38,14 @@ public class Main_Singly {
         System.out.println(list.getNode(3));
         System.out.println(list.getNodeValue(3));
 
-        list.delete_Last_Using_Get_Node_2nd_Last();
-        list.display();
+//        list.delete_Last_Using_Get_Node_2nd_Last();
+//        list.display();
 
 
         list.delete_at_specific_index(2);
         list.display();
 
+        list.Insert_Using_Recursion(1000,4);
+        list.display();
     }
 }
