@@ -23,6 +23,5 @@ public class Dyanmic_Queue extends Circular_Queue{
             data=temp;
         }
         return super.add(val);
-
     }
 }
