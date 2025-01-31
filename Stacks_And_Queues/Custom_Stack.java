@@ -1,5 +1,10 @@
 package Stacks_And_Queues;
-
+/**
+@author Chetna Soni (chetnasoni1310@gmail.com)
+@version 1.0
+@since 2025
+@see <a href="https://docs.oracle.com/en/java/javase/23/docs/api/index.html ">Java Docs</a>
+ */
 public class Custom_Stack {
 
     public int[]data;
