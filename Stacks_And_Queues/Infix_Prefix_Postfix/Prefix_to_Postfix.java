@@ -16,7 +16,7 @@ public class Prefix_to_Postfix {
             } else if (ch == '+' || ch == '-' || ch == '*' || ch == '/') {
                 String a = postfix.pop();
                 String b = postfix.pop();
-                String res = a + b +ch;
+                String res = a + b + ch;
                 postfix.push(res);
             }
         }
